@@ -1,17 +1,12 @@
-
-import { Hero } from '@/features/homepage'
-import React from 'react'
+import { Hero } from "@/features/homepage";
+import React from "react";
 
 export default function HeroPage() {
   return (
-    <div className='bg-white bg-[url("/assets/hatts-img.jpg")]'>
     <Hero>
-      <Hero.img>
-        <div></div>
-      </Hero.img>
-
+      <div className="absolute inset-10 w-64 h-64 bg-blue-400">
+        <div className="relative inset-10 w-32 h-32 bg-red-400">Child</div>
+      </div>
     </Hero>
-    </div>
-  )
+  );
 }
-

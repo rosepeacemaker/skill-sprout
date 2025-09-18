@@ -1,18 +1,18 @@
 import React from "react";
+
 type HeroTypes = {
   children: React.ReactNode;
   className?: React.ComponentProps<"div">["className"];
 };
 export default function Hero({ children, className }: HeroTypes) {
-  
   return (
-    <div
-      className={`${className} relative w-full h-[60vh] flex flex-col justify-center items-center overflow-hidden`}
-    >
-      {children}
+    <div className=" w-full h-[80vh] relative bg-[url('/assets/hatts-img.jpg')] bg-cover bg-center">
+      <div
+        className={`${className} inset-0 absolute
+     bg-gradient-to-b from-black/60 to-transparent`}
+      >
+        {children}
+      </div>
     </div>
   );
 }
-Hero.Image = function HeroImage({ children }: { children: React.ReactNode }) {
-  return <div>{children}</div>;
-};
