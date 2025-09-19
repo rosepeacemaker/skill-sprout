@@ -16,3 +16,9 @@ export default function Hero({ children, className }: HeroTypes) {
     </div>
   );
 }
+
+Hero.Content = function HeroContent({ children }: { children: React.ReactNode }) {
+  return <div className="text-white text-[35px] font-bold flex items-center justify-center w-90 border border-red-700">{children}</div>;
+};
+
+
