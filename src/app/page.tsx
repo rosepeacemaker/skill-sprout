@@ -6,7 +6,7 @@ export default function HeroPage() {
   return (
     <Hero className="flex flex-col items-center justify-center">
       <div className="w-full text-center fixed top-0">
-        <MenuBar/>
+        <MenuBar />
       </div>
       <Hero.Content>Online Education Academy</Hero.Content>
       <Hero.SubContent>
@@ -21,9 +21,7 @@ export default function HeroPage() {
         </Button>
       </Hero.Buttons>
       <div className="flex fixed bottom-0">
-        <Hero.Footer>
-          hello
-        </Hero.Footer>
+        <Hero.Footer>hello</Hero.Footer>
       </div>
     </Hero>
   );

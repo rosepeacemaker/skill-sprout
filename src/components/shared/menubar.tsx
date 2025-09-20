@@ -2,7 +2,6 @@ import React from "react";
 import { Menubar, MenubarMenu, MenubarTrigger } from "../ui/menubar";
 import { GraduationCap } from "lucide-react";
 
-
 export default function MenuBar() {
   const triggerBtn =
     "text-white font-semibold hover:text-yellow transition-color";
@@ -19,7 +18,6 @@ export default function MenuBar() {
             <MenubarTrigger className={triggerBtn}>{items}</MenubarTrigger>
           </MenubarMenu>
         ))}
-        
       </div>
     </Menubar>
   );

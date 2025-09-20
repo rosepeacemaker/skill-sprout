@@ -50,11 +50,6 @@ Hero.Buttons = function HeroButtons({
 }) {
   return <div className="flex space-x-4 mt-6">{children}</div>;
 };
-Hero.Footer = function HeroFooter({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+Hero.Footer = function HeroFooter({ children }: { children: React.ReactNode }) {
   return <div className="flex bg-black">{children}</div>;
 };
-
