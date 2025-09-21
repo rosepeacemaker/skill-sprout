@@ -118,3 +118,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .custom-button {
+  
+    background: linear-gradient(45deg, #0347b4, #2972ca); 
+    border: 2px solid transparent;
+  border-image: linear-gradient(45deg, #3b82f6, #facc15) 1; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); 
+  }
+  .custom-button:hover {
+     
+    background: linear-gradient(45deg, #033db8, #072c68); 
+    border-image: linear-gradient(45deg, #facc15, #3b82f6) 1; 
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.5); 
+  }
+}
