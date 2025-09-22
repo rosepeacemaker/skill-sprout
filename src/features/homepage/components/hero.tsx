@@ -17,22 +17,4 @@ export default function Hero({ children, className }: HeroTypes) {
   );
 }
 
-Hero.Content = function HeroContent({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <div className="text-white text-[45px] font-bold leading-tigth w-95 text-center leading-relaxed">
-      {children}
-    </div>
-  );
-};
 
-Hero.Buttons = function HeroButtons({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return <div className="flex space-x-4 mt-6">{children}</div>;
-};
