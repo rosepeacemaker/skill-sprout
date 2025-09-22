@@ -17,8 +17,14 @@ export default function HeroFooter({ children, className }: HeroFooterTypes) {
     </div>
   );
 }
-HeroFooter.Card = function HeroCard({children}:{children:React.ReactNode}){
-    return(
-        <Card className="w-[600px] h-[125px] bg-yellow-400 border border-white text-white font-semibold">{children}</Card>
-    )
-}
+HeroFooter.Card = function HeroCard({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <Card className="w-[600px] h-[125px] bg-yellow-400 border border-white text-white font-semibold">
+      {children}
+    </Card>
+  );
+};

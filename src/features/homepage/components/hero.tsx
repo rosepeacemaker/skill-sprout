@@ -23,9 +23,7 @@ Hero.Content = function HeroContent({
   children: React.ReactNode;
 }) {
   return (
-    <div
-      className="text-white text-[45px] font-bold leading-tigth w-95 text-center leading-relaxed"
-    >
+    <div className="text-white text-[45px] font-bold leading-tigth w-95 text-center leading-relaxed">
       {children}
     </div>
   );

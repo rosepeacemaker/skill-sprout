@@ -18,14 +18,18 @@ export default function HeroPage() {
             </p>
           </Hero.Content>
           <Hero.Buttons>
-            <Button className="custom-button">ENRoll</Button>
+            <Button className="custom-button">ENROLL</Button>
             <Button className="custom-button">Learn more</Button>
           </Hero.Buttons>
         </main>
       </Hero>
       <HeroFooter className="flex justify-center">
         <HeroFooter.Card>
-          <CardHeader><h1 className="text-[24px] text-center">Find Your Courses.. Apply Hurry up!</h1></CardHeader>
+          <CardHeader>
+            <h1 className="text-[24px] text-center">
+              Find Your Courses.. Apply Hurry up!
+            </h1>
+          </CardHeader>
         </HeroFooter.Card>
       </HeroFooter>
     </section>

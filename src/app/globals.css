@@ -121,7 +121,7 @@
 
 @layer components {
   .custom-button {
-  
+ 
     background: linear-gradient(45deg, #0347b4, #2972ca); 
     border: 2px solid transparent;
   border-image: linear-gradient(45deg, #3b82f6, #facc15) 1; 
