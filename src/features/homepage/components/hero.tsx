@@ -16,5 +16,3 @@ export default function Hero({ children, className }: HeroTypes) {
     </div>
   );
 }
-
-
