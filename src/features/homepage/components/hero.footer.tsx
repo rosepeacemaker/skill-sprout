@@ -12,15 +12,20 @@ export default function HeroFooter({
   title = "  Find Your Courses, Apply Hurry up!",
 }) {
   return (
-    <div className="w-full relative h-[80vh] bg-[#2a2a4a] flex items-center justify-center">
+    <div className="w-full relative h-[80vh] bg-[#040413] flex items-center justify-center">
       <Card className="w-[450px] h-[110px] absolute top-2 flex items-center justify-center bg-[#F9A825] border border-white text-white text-[22px] font-semibold">
         <CardContent className="flex flex-col items-center p-4 justify-center gap-2 w-full">
           <CardTitle className="text-center">{title}</CardTitle>
           <DropDown />
         </CardContent>
       </Card>
-      <CardDescription className="text-2xl text-white max-w-2xl border border-red-600 ">
+      <CardDescription className="card-discription">
         What we offer for Growth your study!
+        <p className="text-[18px]">
+          📚 Weather you&apos;r just stating out or leveling up your skills .
+          our platform is designed to make course applications simple and
+          stress-free.No fees. no confusion. Just learning.
+        </p>
       </CardDescription>
       <div className="flex absolute bottom-0">
         <HeroFooterCard />

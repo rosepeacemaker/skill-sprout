@@ -1,22 +1,29 @@
 "use client";
 import ReusableCard from "@/features/homepage/cardtypes";
+import { BookOpen, BookUp, Icon, icons, RocketIcon } from "lucide-react";
 import React from "react";
 
 export default function HeroFooterCard() {
   const cardData = [
     {
       title: "Find Your Courses, Apply Hurry up!",
+      titleClass: "text-2xl",
       content: "Join Our Learning Community!",
+      contentClass: "text-sm",
       bgColor: "bg-[#795d9c]",
     },
     {
       title: "Explore New Skills Today!",
+      titleClass: "text-2xl",
       content: "Join Our Learning Community!",
+      contentClass: "text-sm",
       bgColor: "bg-red-500",
     },
     {
       title: "Join Our Learning Community!",
       content: "Join Our Learning Community!",
+      contentClass: "text-sm",
+      titleClass: "text-2xl",
       bgColor: "bg-blue-500",
     },
   ];
@@ -29,6 +36,8 @@ export default function HeroFooterCard() {
             title={card.title}
             content={card.content}
             bgColor={card.bgColor}
+            titleClass={card.titleClass}
+            contentClass={card.contentClass}
           />
         </div>
       ))}

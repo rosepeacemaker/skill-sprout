@@ -12,7 +12,7 @@ export default function MenuBar() {
   const baseStyles =
     "text-white text-[18px] font-semibold hover:underline hover:cursor-pointer transition-all duration-200";
   return (
-    <Menubar className=" flex items-center gap-2 justify-around px-8 bg-transparent border-2 h-[60px] border-b-white">
+    <Menubar className=" flex items-center gap-2 justify-between px-20 bg-transparent border-2 h-[60px] border-b-white">
       <div className="flex items-center gap-2">
         <GraduationCap size={45} fill="yellow" />
         <span className="text-white font-semibold text-2xl">Skill Sprout</span>
