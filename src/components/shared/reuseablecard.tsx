@@ -1,6 +1,6 @@
 "use client";
 import ReusableCard from "@/features/homepage/cardtypes";
-import { BookOpen, BookUp, Icon, icons, RocketIcon } from "lucide-react";
+
 import React from "react";
 
 export default function HeroFooterCard() {
@@ -24,7 +24,7 @@ export default function HeroFooterCard() {
       content: "Join Our Learning Community!",
       contentClass: "text-sm",
       titleClass: "text-2xl",
-      bgColor: "bg-blue-500",
+      bgColor: "bg-gradient-to-t from-[#0b58d4] to-[#031636]",
     },
   ];
 

@@ -3,30 +3,31 @@ import {
   Card,
   CardContent,
   CardDescription,
+  CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import DropDown from "@/components/shared/dropdownbutton";
 import HeroFooterCard from "@/components/shared/reuseablecard";
 
 export default function HeroFooter({
-  title = "  Find Your Courses, Apply Hurry up!",
+  title = " Find Your Courses, Apply Hurry up!",
 }) {
   return (
-    <div className="w-full relative h-[80vh] bg-[#040413] flex items-center justify-center">
-      <Card className="w-[450px] h-[110px] absolute top-2 flex items-center justify-center bg-[#F9A825] border border-white text-white text-[22px] font-semibold">
-        <CardContent className="flex flex-col items-center p-4 justify-center gap-2 w-full">
+    <div className="w-full relative h-[80vh] bg-gradient-to-l from-[#1d2034] to-[#000000] flex items-center justify-center">
+      <Card className="card-header">
+        <CardHeader className="flex flex-col items-center p-4 justify-cent gap-2 w-full">
           <CardTitle className="text-center">{title}</CardTitle>
           <DropDown />
-        </CardContent>
+        </CardHeader>
       </Card>
-      <CardDescription className="card-discription">
+      <CardContent className="text-2xl text-white text-center mb-16 border border-red-900">
         What we offer for Growth your study!
-        <p className="text-[18px]">
+        <CardDescription className="card-discription">
           📚 Weather you&apos;r just stating out or leveling up your skills .
           our platform is designed to make course applications simple and
           stress-free.No fees. no confusion. Just learning.
-        </p>
-      </CardDescription>
+        </CardDescription>
+      </CardContent>
       <div className="flex absolute bottom-0">
         <HeroFooterCard />
       </div>

@@ -121,19 +121,46 @@
   .custom-button {
     border: solid rgb(118, 122, 118);
     border-radius: 12px;
-    background:none;
+    background: none;
     background-image: black;
   }
   .custom-button:hover {
-    background:none;
+    background: none;
     background-color: green;
     box-shadow: #07db07;
   }
-  .card-discription{
-    font-size: larger;
-    position: absolute;
-    width: 300px;
+  .card-discription {
+    font-size: 40px;
+    text-align: center;
+    width: 350px;
     line-height: normal;
-    /* text-2xl absolute top-[170px] text-white text-center max-w-2xl leading-relaxed */
+    max-width: 42rem;
+    transition: color 0.3s ease;
+    transform: scaleX(0.3s);
+  }
+  .card-discription:hover {
+    color: #f33dea;
+    transform: scale(1.1);
+  }
+
+  .card-header {
+    width: 450px;
+    height: 110px;
+    position: absolute;
+    top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3b63d;
+    border: 8px solid #1426e7;
+    font-size: 22px;
+    transition: all 0.3s ease;
+  }
+  .card-header:hover {
+    background-color: #1426e7;
+    border-color: #f3b63d;
+    transform: scaleX(0.5);
+    cursor: pointer;
   }
 }
+/* "w-[450px] h-[110px] absolute top-2 flex items-center justify-center bg-[#F9A825] border border-white text-white text-[22px] font-semibold */

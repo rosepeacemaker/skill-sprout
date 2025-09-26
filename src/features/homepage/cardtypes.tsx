@@ -6,7 +6,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-
 type ReusableCardProps = {
   title: string;
   content: string;
